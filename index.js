@@ -1,12 +1,10 @@
 /* index.js */
 
-
-var numberOfDrumButtons = document.querySelectorAll(".drum").length;
+var numberOfDrumButtons = $(".drum").length;
 for (i = 0; i < numberOfDrumButtons; i++) {
-   document.querySelectorAll(".drum")[i].addEventListener("click", handleClickBehavior);
+  $(".drum")[i].addEventListener("click", handleClickBehavior);
    document.addEventListener("keydown", handleKeyDownBehavior); 
 }
-
 
 /* Event handling callback functions */
 
@@ -41,6 +39,10 @@ function makeSound(key) {
          break;
       case "j":
          var audio = new Audio("sounds/snare.mp3");
+         audio.play();
+         break;
+      case "i":
+         var audio = new Audio("sounds/rim-click.mp3");
          audio.play();
          break;
       case "k":
