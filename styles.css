@@ -36,6 +36,10 @@ footer {
   background-image: url("images/snare.png");
 }
 
+.i {
+  background-image: url("images/rim-click.png");
+}
+
 .k {
   background-image: url("images/crash.png");
 }
